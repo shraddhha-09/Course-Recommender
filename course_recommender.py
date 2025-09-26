@@ -233,7 +233,7 @@ def homepage():
     st.write("")
     col1,col2=st.columns(2)
     with col1:
-        st.info("We Reffer a Course On Your **knowledge** Capability")
+        st.info("📚We are recommending a class appropriate for your level of knowledge")
         col1,col3=st.columns(2)
         with col3:
             if st.button("Get Started"):
@@ -484,4 +484,5 @@ elif st.session_state["pages"] == 2:
 elif st.session_state["pages"] == 3:
     recommendation()
 elif st.session_state["pages"] == 4:
+
     final()
