@@ -226,7 +226,7 @@ if 'final_questions' not in st.session_state:
 if "pages" not in st.session_state:
     st.session_state.pages = 0
 from PIL import Image
-image="skill.jpeg"  #add image name
+image="skill.jpg"  #add image name
 def homepage():
     st.subheader("Welcome to Course Recommender")
     st.write("")
@@ -302,7 +302,7 @@ def intial():
                 if len(user_answers) == 15 :
                     
                     st.session_state.answers = user_answers
-                    st.session_state["pages"]=3
+                    
                     
                     # Calculate initial score
                     score = 0
@@ -325,7 +325,10 @@ def intial():
                     
                     st.info(f"Recommended Level: {level}")
                     st.session_state.recommended_level = level
-                    st.rerun()
+                    
+                    if st.button("Recommend Courses"):
+                        st.session_state["pages"]=3
+                        st.rerun()
                 else:
                     st.toast(f"You forgot Answering{len(user_answers) - 15}")
 
