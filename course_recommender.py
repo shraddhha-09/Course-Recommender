@@ -300,7 +300,7 @@ def intial():
             if submitted:
                 # Store answers in session state
                 if len(user_answers) == 15 :
-                    
+                    st.session_state["pages"] = 3
                     st.session_state.answers = user_answers
                     
                     
@@ -326,11 +326,12 @@ def intial():
                     st.info(f"Recommended Level: {level}")
                     st.session_state.recommended_level = level
                     
-                    if st.button("Recommend Courses"):
-                        st.session_state["pages"]=3
+                    butt = st.button("Recommend Courses")
+                    if butt:
                         st.rerun()
                 else:
                     st.toast(f"You forgot Answering{len(user_answers) - 15}")
+            
 
 # ----------------- COURSE RECOMMENDATION SECTION ------------------
 def recommendation():
