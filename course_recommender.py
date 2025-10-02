@@ -1,11 +1,34 @@
 import streamlit as st
 from googleapiclient.discovery import build
 import random
-
+from supabase import create_client
 # ----------------- CONFIG ------------------
 API_KEY = 'AIzaSyDcf8lc7pbp-JzNr4DLWcNJO6VRvEZIO3g'  # Replace with your actual API key
 SEARCH_ENGINE = 'youtube'
-
+supabase = create_client(st.secrets["url"], st.secrets["key"])
+st.markdown(
+    """
+    <style>
+    .css-18e3th9 { 
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        margin: 0;
+    }
+    body {
+        background: linear-gradient(to bottom, #87ceeb, #e6e6fa);
+        background-attachment: fixed;
+        margin: 0;
+        height: 100vh;
+        width: 100%;
+    }
+    .stApp, .css-1d391kg {
+        background-color: transparent;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True)
 # ----------------- QUIZ QUESTIONS ------------------
 quiz_questions = {
     "Data Science": [
@@ -236,7 +259,7 @@ def homepage():
         st.info("📚We are recommending a class appropriate for your level of knowledge")
         col1,col3=st.columns(2)
         with col3:
-            if st.button("Get Started"):
+            if st.button("Get Started ➡️"):
                 st.session_state["pages"]=1
                 st.rerun()
             
@@ -262,6 +285,9 @@ def login():
                     if not name  or not education  or not field :
                         st.toast("Fill Up the Cells")
                     else:
+                        supabase.table("user").insert({
+                            "name": name, "education": education, "field": field,"goals": goals
+                            }).execute()
                         st.session_state["pages"]=2
                         st.rerun()
                     
