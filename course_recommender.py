@@ -58,6 +58,82 @@ quiz_questions = {
         {'question': 'Which of these is a Python web framework?', 'options': ['Django', 'TensorFlow', 'Pandas', 'NumPy'], 'answer': 'Django'},
         {'question': 'What is the purpose of pytest?', 'options': ['Data visualization', 'Unit testing', 'Web development', 'Machine learning'], 'answer': 'Unit testing'}
     ],
+    "Artificial Intelligence": [
+    {'question': 'What is Artificial Intelligence?',
+     'options': ['A type of hardware', 'A programming language', 'Simulation of human intelligence by machines', 'A database system'],
+     'answer': 'Simulation of human intelligence by machines',
+     'explanation': 'AI refers to machines mimicking cognitive functions like learning and problem-solving.'},
+
+    {'question': 'Which of the following is a subset of AI?',
+     'options': ['Big Data', 'Machine Learning', 'Cloud Computing', 'Cyber Security'],
+     'answer': 'Machine Learning',
+     'explanation': 'Machine Learning is a subset of AI that enables systems to learn from data.'},
+
+    {'question': 'Which algorithm is commonly used for classification tasks?',
+     'options': ['K-Means', 'Linear Regression', 'Decision Tree', 'Apriori'],
+     'answer': 'Decision Tree',
+     'explanation': 'Decision Trees are widely used for classification and regression tasks.'},
+
+    {'question': 'What is the purpose of training data in machine learning?',
+     'options': ['To test the model', 'To store information', 'To teach the model patterns', 'To visualize results'],
+     'answer': 'To teach the model patterns',
+     'explanation': 'Training data helps the model learn relationships and patterns for prediction.'},
+
+    {'question': 'Which language is most popular for AI development?',
+     'options': ['Java', 'C++', 'Python', 'PHP'],
+     'answer': 'Python',
+     'explanation': 'Python is widely used in AI due to its simplicity and rich libraries like TensorFlow and PyTorch.'},
+
+    {'question': 'What does NLP stand for in AI?',
+     'options': ['Neural Language Processing', 'Natural Language Processing', 'Numeric Logic Programming', 'Network Level Protocol'],
+     'answer': 'Natural Language Processing',
+     'explanation': 'NLP enables machines to understand and process human language.'},
+
+    {'question': 'Which AI concept mimics the human brain?',
+     'options': ['Decision Tree', 'Neural Network', 'Support Vector Machine', 'Random Forest'],
+     'answer': 'Neural Network',
+     'explanation': 'Neural Networks are inspired by the structure and function of the human brain.'},
+
+    {'question': 'What is supervised learning?',
+     'options': ['Learning without labeled data', 'Learning with labeled data', 'Learning from mistakes', 'Learning through reinforcement'],
+     'answer': 'Learning with labeled data',
+     'explanation': 'Supervised learning uses labeled data to train models to make predictions.'},
+
+    {'question': 'Which of the following is an unsupervised learning algorithm?',
+     'options': ['Linear Regression', 'K-Means Clustering', 'Logistic Regression', 'Naive Bayes'],
+     'answer': 'K-Means Clustering',
+     'explanation': 'K-Means is used to group data into clusters without labeled outcomes.'},
+
+    {'question': 'What is overfitting in machine learning?',
+     'options': ['Model performs well on new data', 'Model fails to learn patterns', 'Model memorizes training data too well', 'Model ignores training data'],
+     'answer': 'Model memorizes training data too well',
+     'explanation': 'Overfitting occurs when a model performs well on training data but poorly on unseen data.'},
+
+    {'question': 'Which AI field focuses on decision-making and planning?',
+     'options': ['Computer Vision', 'Expert Systems', 'Robotics', 'Reinforcement Learning'],
+     'answer': 'Reinforcement Learning',
+     'explanation': 'Reinforcement Learning involves agents learning to make decisions by trial and error.'},
+
+    {'question': 'Which of the following is used for image recognition?',
+     'options': ['CNN', 'RNN', 'SVM', 'KNN'],
+     'answer': 'CNN',
+     'explanation': 'Convolutional Neural Networks (CNNs) are specialized for image and visual data processing.'},
+
+    {'question': 'What is the role of a loss function in machine learning?',
+     'options': ['To store data', 'To measure prediction error', 'To visualize results', 'To compile code'],
+     'answer': 'To measure prediction error',
+     'explanation': 'Loss functions quantify how far off predictions are from actual values.'},
+
+    {'question': 'Which AI technique is used in chatbots?',
+     'options': ['Computer Vision', 'Natural Language Processing', 'Data Mining', 'Cryptography'],
+     'answer': 'Natural Language Processing',
+     'explanation': 'Chatbots use NLP to understand and respond to human language.'},
+
+    {'question': 'What is the goal of deep learning?',
+     'options': ['To create websites', 'To analyze spreadsheets', 'To learn complex patterns using neural networks', 'To manage databases'],
+     'answer': 'To learn complex patterns using neural networks',
+     'explanation': 'Deep learning uses multiple layers of neural networks to model complex data relationships.'}
+    ],
     "Data Analysis": [
         {'question': 'What function in pandas shows summary statistics?', 'options': ['info()', 'mean()', 'describe()', 'stats()'], 'answer': 'describe()'},
         {'question': 'What does JSON stand for?', 'options': ['JavaScript Object Notation', 'Java Structure Object Notation', 'JavaScript Output Name', 'Java Syntax Object Name'], 'answer': 'JavaScript Object Notation'},
@@ -111,7 +187,161 @@ quiz_questions = {
         {'question': 'Which CSS property is used to add rounded corners?', 'options': ['border-radius', 'corner-radius', 'round-corner', 'border-style'], 'answer': 'border-radius'},
         {'question': 'Which HTML tag is used to define a division or section?', 'options': ['<div>', '<section>', '<span>', '<block>'], 'answer': '<div>'},
         {'question': 'Which CSS property is used to control the element positioning?', 'options': ['position', 'display', 'float', 'All of the above'], 'answer': 'All of the above'}
+    ],
+    "Information Technology": [
+    {'question': 'Which device connects multiple networks together?',
+     'options': ['Switch', 'Router', 'Modem', 'Hub'],
+     'answer': 'Router',
+     'explanation': 'Routers connect different networks and direct data packets between them.'},
+
+    {'question': 'What does HTTP stand for?',
+     'options': ['HyperText Transfer Protocol', 'High Tech Transmission Protocol', 'Hyperlink Text Transfer Protocol', 'Host Transfer Text Protocol'],
+     'answer': 'HyperText Transfer Protocol',
+     'explanation': 'HTTP is the protocol used for transferring web pages on the internet.'},
+
+    {'question': 'Which programming language is commonly used for web development?',
+     'options': ['Python', 'Java', 'HTML', 'C++'],
+     'answer': 'HTML',
+     'explanation': 'HTML is the standard markup language for creating web pages.'},
+
+    {'question': 'What is the function of an operating system?',
+     'options': ['Manage hardware and software resources', 'Design websites', 'Compile code', 'Store passwords'],
+     'answer': 'Manage hardware and software resources',
+     'explanation': 'Operating systems manage system resources and provide services to applications.'},
+
+    {'question': 'Which of the following is a cloud computing platform?',
+     'options': ['Windows XP', 'Google Drive', 'AWS', 'MS Office'],
+     'answer': 'AWS',
+     'explanation': 'Amazon Web Services (AWS) is a widely used cloud computing platform.'},
+
+    {'question': 'What is the full form of LAN?',
+     'options': ['Local Area Network', 'Large Access Node', 'Long Area Network', 'Logical Access Network'],
+     'answer': 'Local Area Network',
+     'explanation': 'LAN connects computers within a limited area like a home or office.'},
+
+    {'question': 'Which software is used to create spreadsheets?',
+     'options': ['MS Word', 'MS Excel', 'MS PowerPoint', 'MS Outlook'],
+     'answer': 'MS Excel',
+     'explanation': 'MS Excel is designed for creating and managing spreadsheets.'},
+
+    {'question': 'What does URL stand for?',
+     'options': ['Uniform Resource Locator', 'Universal Remote Link', 'Unified Routing Line', 'User Reference Log'],
+     'answer': 'Uniform Resource Locator',
+     'explanation': 'URL is the address used to access resources on the internet.'},
+
+    {'question': 'Which of the following is an example of open-source software?',
+     'options': ['Microsoft Word', 'Adobe Photoshop', 'Linux', 'CorelDRAW'],
+     'answer': 'Linux',
+     'explanation': 'Linux is a free and open-source operating system.'},
+
+    {'question': 'What is the purpose of a database?',
+     'options': ['To store and manage data', 'To design websites', 'To edit images', 'To send emails'],
+     'answer': 'To store and manage data',
+     'explanation': 'Databases are used to efficiently store, retrieve, and manage data.'},
+
+    {'question': 'Which protocol is used to send emails?',
+     'options': ['FTP', 'SMTP', 'HTTP', 'IP'],
+     'answer': 'SMTP',
+     'explanation': 'Simple Mail Transfer Protocol (SMTP) is used for sending emails.'},
+
+    {'question': 'Which of the following is a mobile operating system?',
+     'options': ['Windows 10', 'Ubuntu', 'Android', 'macOS'],
+     'answer': 'Android',
+     'explanation': 'Android is an operating system designed for mobile devices.'},
+
+    {'question': 'What is the use of a compiler?',
+     'options': ['To execute programs', 'To convert source code to machine code', 'To debug hardware', 'To manage memory'],
+     'answer': 'To convert source code to machine code',
+     'explanation': 'Compilers translate high-level programming code into machine-readable code.'},
+
+    {'question': 'Which of the following is a web browser?',
+     'options': ['Google Chrome', 'MS Word', 'Adobe Reader', 'Windows Explorer'],
+     'answer': 'Google Chrome',
+     'explanation': 'Web browsers like Chrome are used to access websites and web applications.'},
+
+    {'question': 'Which technology is used for virtual machines?',
+     'options': ['Bluetooth', 'Hypervisor', 'Firewall', 'Compiler'],
+     'answer': 'Hypervisor',
+     'explanation': 'Hypervisors allow multiple virtual machines to run on a single physical host.'}
+    ],
+    "Cyber Security": [
+    {'question': 'What is the primary purpose of a firewall?',
+     'options': ['Encrypt data', 'Monitor employee activity', 'Block unauthorized access', 'Store passwords'],
+     'answer': 'Block unauthorized access',
+     'explanation': 'Firewalls act as barriers between trusted and untrusted networks, blocking unauthorized access.'},
+
+    {'question': 'Which type of attack involves tricking users into revealing sensitive information?',
+     'options': ['Phishing', 'DDoS', 'SQL Injection', 'Brute Force'],
+     'answer': 'Phishing',
+     'explanation': 'Phishing attacks use deceptive emails or websites to trick users into revealing credentials or personal data.'},
+
+    {'question': 'What does the acronym VPN stand for?',
+     'options': ['Virtual Private Network', 'Verified Protocol Node', 'Variable Packet Network', 'Virtual Packet Notation'],
+     'answer': 'Virtual Private Network',
+     'explanation': 'VPNs create secure, encrypted connections over public networks to protect user privacy.'},
+
+    {'question': 'Which protocol is used to secure web traffic?',
+     'options': ['HTTP', 'FTP', 'SSL/TLS', 'SMTP'],
+     'answer': 'SSL/TLS',
+     'explanation': 'SSL/TLS protocols encrypt data exchanged between web browsers and servers, securing web traffic.'},
+
+    {'question': 'What is a zero-day vulnerability?',
+     'options': ['A virus that activates at midnight', 'An outdated software bug', 'A flaw unknown to the vendor', 'A backup failure'],
+     'answer': 'A flaw unknown to the vendor',
+     'explanation': 'Zero-day vulnerabilities are security flaws that are exploited before the vendor is aware or has issued a fix.'},
+
+    {'question': 'Which of the following is a strong password?',
+     'options': ['123456', 'password', 'Shraddha@2025!', 'qwerty'],
+     'answer': 'Shraddha@2025!',
+     'explanation': 'Strong passwords include a mix of letters, numbers, and special characters.'},
+
+    {'question': 'What does two-factor authentication (2FA) add to login security?',
+     'options': ['A backup password', 'A second device', 'An additional verification step', 'A longer password'],
+     'answer': 'An additional verification step',
+     'explanation': '2FA requires a second form of verification, such as a code sent to your phone.'},
+
+    {'question': 'Which malware type locks your data and demands payment?',
+     'options': ['Spyware', 'Ransomware', 'Adware', 'Trojan'],
+     'answer': 'Ransomware',
+     'explanation': 'Ransomware encrypts files and demands payment to unlock them.'},
+
+    {'question': 'What is the safest way to connect to public Wi-Fi?',
+     'options': ['Use a VPN', 'Disable antivirus', 'Turn off firewall', 'Share files openly'],
+     'answer': 'Use a VPN',
+     'explanation': 'VPNs encrypt your data, making public Wi-Fi connections safer.'},
+
+    {'question': 'Which tool is commonly used for ethical hacking?',
+     'options': ['Photoshop', 'Wireshark', 'Excel', 'Notepad'],
+     'answer': 'Wireshark',
+     'explanation': 'Wireshark is a network protocol analyzer used for security testing and troubleshooting.'},
+
+    {'question': 'What is social engineering in cyber security?',
+     'options': ['Using AI to detect threats', 'Manipulating people to gain access', 'Encrypting files', 'Installing antivirus software'],
+     'answer': 'Manipulating people to gain access',
+     'explanation': 'Social engineering exploits human psychology to bypass security measures.'},
+
+    {'question': 'Which of the following is NOT a cyber security threat?',
+     'options': ['Malware', 'Phishing', 'Firewall', 'Ransomware'],
+     'answer': 'Firewall',
+     'explanation': 'A firewall is a security tool, not a threat.'},
+
+    {'question': 'What is the role of antivirus software?',
+     'options': ['Create backups', 'Detect and remove malware', 'Speed up internet', 'Monitor employee activity'],
+     'answer': 'Detect and remove malware',
+     'explanation': 'Antivirus software scans for and removes malicious programs.'},
+
+    {'question': 'Which cyber attack floods a system with traffic to crash it?',
+     'options': ['Phishing', 'DDoS', 'SQL Injection', 'Man-in-the-middle'],
+     'answer': 'DDoS',
+     'explanation': 'Distributed Denial of Service (DDoS) attacks overwhelm systems with traffic.'},
+
+    {'question': 'What is the best practice for storing passwords?',
+     'options': ['Write them on paper', 'Save in browser', 'Use a password manager', 'Share with friends'],
+     'answer': 'Use a password manager',
+     'explanation': 'Password managers securely store and encrypt your login credentials.'}
     ]
+
+
 }
 
 # ----------------- POST-COURSE ASSESSMENT QUESTIONS ------------------
